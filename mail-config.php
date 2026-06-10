@@ -14,12 +14,12 @@ function sendEmail($to, $subject, $body) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'nokwandambanjwa359@gmail.com';    
-        $mail->Password   = 'sljhaltufqualphj';         
+        $mail->Username   = '';    
+        $mail->Password   = '';         
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
-        $mail->setFrom('nokwandambanjwa359@gmail.com', 'NEXUS Marketplace');
+        $mail->setFrom('', 'NEXUS Marketplace');
         $mail->addAddress($to);
         $mail->isHTML(true);
         $mail->Subject = $subject;
