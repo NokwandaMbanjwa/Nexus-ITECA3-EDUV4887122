@@ -9,8 +9,8 @@ if (!isLoggedIn()) {
     exit;
 }
 
-$pusher_key = 'a3192cebd4c0ba37141f';
-$pusher_secret = 'f39249c0cbb7baf5eb07';
+$pusher_key = '';
+$pusher_secret = '';
 
 $body = file_get_contents('php://input');
 $params = [];
